@@ -52,7 +52,7 @@ export const Badge = (props: Props) => {
         rel="noopener noreferrer"
         class="lite-badge"
         id="lite-badge"
-        style={{ 'font-weight': 'bold', "text-align":'center', color: props.poweredByTextColor ?? defaultTextColor }}
+        style={{ 'font-weight': 'bold', 'text-align': 'center', color: props.poweredByTextColor ?? defaultTextColor }}
       >
         <span>Simarpreet Singh</span>
       </a>
