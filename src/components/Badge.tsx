@@ -44,7 +44,7 @@ export const Badge = (props: Props) => {
         'background-color': props.badgeBackgroundColor ?? '#ffffff',
       }}
     >
-      Created with ❤️ by
+      Created with ❤️ by 
       <a
         ref={liteBadge}
         href={'https://www.linkedin.com/in/simarpreet-singh-12a67480/'}
@@ -54,7 +54,7 @@ export const Badge = (props: Props) => {
         id="lite-badge"
         style={{ 'font-weight': 'bold', color: props.poweredByTextColor ?? defaultTextColor }}
       >
-        <span> Simarpreet Singh</span>
+        <span>Simarpreet Singh</span>
       </a>
     </span>
   );
