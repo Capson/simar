@@ -18,7 +18,7 @@ export const StarterPromptBubble = (props: Props) => (
           display: 'inline-block',
           'border-radius': '10px', // Adjust as needed
           padding: '3px', // Reduced space for the border
-          background: 'linear-gradient(45deg, violet, purple, #E6E6FA, green)', // Gradient colors
+          background: 'linear-gradient(45deg, violet, purple, violet, green)', // Gradient colors
           '-webkit-mask': 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
           mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
           '-webkit-mask-composite': 'destination-out',
@@ -55,7 +55,7 @@ export const StarterPromptBubble = (props: Props) => (
         left: -50%;
         width: 200%;
         height: 200%;
-        background: linear-gradient(45deg, #00338D, purple, #e6e6fa, green);
+        background: linear-gradient(45deg, violet, purple, violet, green);
         z-index: -1;
         transition: transform 0.5s;
         transform: rotate(0deg);
