@@ -1,5 +1,3 @@
-import { JSX } from "solid-js";
-
 type Props = {
   prompt: string;
   onPromptClick?: () => void;
@@ -10,10 +8,10 @@ export const StarterPromptBubble = (props: Props) => (
     <style>
       {`
         @keyframes border-shine {
-          0% {
+          0%, 100% {
             background-position: 0% 50%;
           }
-          100% {
+          50% {
             background-position: 200% 50%;
           }
         }
@@ -22,25 +20,20 @@ export const StarterPromptBubble = (props: Props) => (
           position: relative;
           display: inline-block;
           padding: 0.5em;
-          border-radius: 0.5em;
-          border: 2px solid purple;
+          border-radius: 15px;
+          border: 2px solid transparent;
           cursor: pointer;
-          background: linear-gradient(
-            90deg, 
-            purple, 
-            purple, 
-            purple, 
-            white, 
-            purple, 
-            purple, 
-            purple
-          );
-          background-size: 200% 200%;
-          transition: background-position 0.5s, border 0.5s;
+          background: linear-gradient(90deg, purple, purple, white, purple, purple);
+          background-size: 200% 100%;
+          -webkit-background-clip: padding-box;
+          -webkit-text-fill-color: black; /* Set text color */
+          color: black; /* Ensure text color remains black */
+          transition: background-position 0.5s, border-color 0.5s;
         }
 
         .starter-prompt:hover {
           animation: border-shine 2s linear infinite;
+          border-color: purple;
         }
       `}
     </style>
