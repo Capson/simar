@@ -17,8 +17,8 @@ export const StarterPromptBubble = (props: Props) => (
         style={{
           display: 'inline-block',
           'border-radius': '10px', // Adjust as needed
-          //padding: '3px', // Space for the border
-          background: 'linear-gradient(45deg, #00338D, blue, #005EB8, #470A68)', // Gradient colors
+          padding: '5px', // Space for the border
+          background: 'linear-gradient(45deg, #00338D, #483698, #005EB8, #00338D)', // Gradient colors
           '-webkit-mask': 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
           mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
           '-webkit-mask-composite': 'destination-out',
@@ -32,7 +32,7 @@ export const StarterPromptBubble = (props: Props) => (
           style={{
             display: 'block',
             'border-radius': '10px', // Match the outer border radius
-            //padding: '10px', // Adjust as needed
+            padding: '12px', // Adjust as needed
             background: '#ffffff', // Background of the content area
             width: 'max-content',
             'font-size': '15px',
