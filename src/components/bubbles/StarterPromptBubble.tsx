@@ -32,8 +32,8 @@ export const StarterPromptBubble = (props: Props) => (
           style={{
             display: 'block',
             'border-radius': '10px', // Match the outer border radius
-            padding: '12px', // Adjust as needed
-            //background: '#ffffff', // Background of the content area
+            padding: '18px', // Adjust as needed
+            background: '#ffffff', // Background of the content area
             width: 'max-content',
             'font-size': '15px',
             color: 'black', // Set font color to black
@@ -55,7 +55,7 @@ export const StarterPromptBubble = (props: Props) => (
         left: -50%;
         width: 200%;
         height: 200%;
-        background: linear-gradient(45deg, #00338D, #483698, #005EB8, #00338D);
+        background: linear-gradient(45deg, #005eb8, #00338D, #005EB8, #483698);
         z-index: -1;
         transition: transform 0.5s;
         transform: rotate(0deg);
