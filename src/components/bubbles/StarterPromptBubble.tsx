@@ -8,34 +8,37 @@ export const StarterPromptBubble = (props: Props) => (
     <div
       data-modal-target="defaultModal"
       data-modal-toggle="defaultModal"
-      class="flex justify-start items-start animate-fade-in host-container hover:brightness-90 active:brightness-75"
+      className="flex justify-start items-start animate-fade-in host-container hover:brightness-90 active:brightness-75"
       onClick={() => props.onPromptClick?.()}
     >
       <span
-        class="bubble-container px-2 py-1 ml-1 whitespace-pre-wrap max-w-full chatbot-host-bubble"
+        className="bubble-container px-2 py-1 ml-1 whitespace-pre-wrap max-w-full chatbot-host-bubble"
         data-testid="host-bubble"
         style={{
           display: 'inline-block',
-          'border-radius': '10px', // Adjust as needed
-          padding: '3px', // Reduced space for the border
-          background: 'linear-gradient(45deg, violet, purple, violet, green)', // Gradient colors
-          '-webkit-mask': 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+          borderRadius: '10px', 
+          padding: '3px', 
+          background: 'linear-gradient(to bottom right, #00338D 50%, transparent 50%), linear-gradient(to top left, transparent 50%, #6D2077 50%)', // Specified gradient colors for top-left and bottom-right
+          backgroundPosition: '0 0, 100% 100%',
+          backgroundSize: '50% 50%',
+          backgroundRepeat: 'no-repeat',
+          WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
           mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-          '-webkit-mask-composite': 'destination-out',
-          'mask-composite': 'exclude',
+          WebkitMaskComposite: 'destination-out',
+          maskComposite: 'exclude',
           position: 'relative',
           cursor: 'pointer',
         }}
       >
         <span
-          class="content"
+          className="content"
           style={{
             display: 'block',
-            'border-radius': '10px', // Match the outer border radius
+            borderRadius: '10px', // Match the outer border radius
             padding: '10px 20px', // Reduced padding for height
             background: '#ffffff', // Background of the content area
             width: 'max-content',
-            'font-size': '15px',
+            fontSize: '15px',
             color: 'black', // Set font color to black
           }}
         >
@@ -55,7 +58,10 @@ export const StarterPromptBubble = (props: Props) => (
         left: -50%;
         width: 200%;
         height: 200%;
-        background: linear-gradient(45deg, violet, purple, violet, green);
+        background: linear-gradient(to bottom right, #00338D 50%, transparent 50%), linear-gradient(to top left, transparent 50%, #6D2077 50%); // Specified gradient colors for top-left and bottom-right
+        backgroundPosition: '0 0, 100% 100%',
+        backgroundSize: '50% 50%',
+        backgroundRepeat: 'no-repeat',
         z-index: -1;
         transition: transform 0.5s;
         transform: rotate(0deg);
