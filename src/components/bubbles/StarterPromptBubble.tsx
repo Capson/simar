@@ -8,32 +8,43 @@ export const StarterPromptBubble = (props: Props) => (
     <style>
       {`
         @keyframes border-shine {
-          0%, 100% {
+          0% {
             background-position: 0% 50%;
           }
-          50% {
-            background-position: 200% 50%;
+          100% {
+            background-position: 100% 50%;
           }
         }
 
         .starter-prompt {
           position: relative;
           display: inline-block;
-          padding: 0.5em;
+          padding: 0.5em 1em;
           border-radius: 15px;
-          border: 2px solid transparent;
+          background-color: #e0b3ff; /* Light purple background */
+          color: black; /* Text color */
           cursor: pointer;
-          background: linear-gradient(90deg, purple, purple, white, purple, purple);
-          background-size: 200% 100%;
-          -webkit-background-clip: padding-box;
-          -webkit-text-fill-color: black; /* Set text color */
-          color: black; /* Ensure text color remains black */
-          transition: background-position 0.5s, border-color 0.5s;
+          overflow: hidden; /* Ensure pseudo-element doesn't overflow */
         }
 
-        .starter-prompt:hover {
+        .starter-prompt::before {
+          content: '';
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          right: -2px;
+          bottom: -2px;
+          border-radius: 15px;
+          border: 2px solid transparent;
+          background: linear-gradient(90deg, purple, purple, white, purple, purple);
+          background-size: 200% 100%;
+          z-index: 1;
           animation: border-shine 2s linear infinite;
-          border-color: purple;
+        }
+
+        .starter-prompt > span {
+          position: relative;
+          z-index: 2; /* Ensure text is above the pseudo-element */
         }
       `}
     </style>
@@ -52,7 +63,7 @@ export const StarterPromptBubble = (props: Props) => (
           'font-size': '15px'
         }}
       >
-        {props.prompt}
+        <span>{props.prompt}</span>
       </span>
     </div>
   </>
