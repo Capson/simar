@@ -2,6 +2,7 @@ type Props = {
   prompt: string;
   onPromptClick?: () => void;
 };
+
 export const StarterPromptBubble = (props: Props) => (
   <>
     <div
@@ -16,8 +17,10 @@ export const StarterPromptBubble = (props: Props) => (
         style={{
           width: 'max-content',
           'font-size': '15px',
-          'border-radius': '15px',
+          'border-radius': '0.5em', // Combined both border-radius
           cursor: 'pointer',
+          border: '2px solid purple', // Added border style
+          padding: '0.5em', // Added padding for space inside the border
         }}
       >
         {props.prompt}
