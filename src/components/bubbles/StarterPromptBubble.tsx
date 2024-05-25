@@ -16,13 +16,16 @@ export const StarterPromptBubble = (props: Props) => (
         data-testid="host-bubble"
         style={{
           display: 'inline-block',
-          borderRadius: '10px', 
-          padding: '3px', 
-          background: 'linear-gradient(to bottom right, #00338D 50%, transparent 50%), linear-gradient(to top left, transparent 50%, #6D2077 50%)', // Specified gradient colors for top-left and bottom-right
-          backgroundPosition: '0 0, 100% 100%',
-          backgroundSize: '50% 50%',
+          borderRadius: '10px',
+          padding: '3px',
+          background:
+            'linear-gradient(to bottom, #00338D 50%, transparent 50%), linear-gradient(to right, #00338D 50%, transparent 50%), linear-gradient(to top, #6D2077 50%, transparent 50%), linear-gradient(to left, #6D2077 50%, transparent 50%)',
+          backgroundPosition:
+            'top left, top left, bottom right, bottom right',
+          backgroundSize: '100% 3px, 3px 100%, 100% 3px, 3px 100%',
           backgroundRepeat: 'no-repeat',
-          WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+          WebkitMask:
+            'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
           mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
           WebkitMaskComposite: 'destination-out',
           maskComposite: 'exclude',
@@ -58,10 +61,7 @@ export const StarterPromptBubble = (props: Props) => (
         left: -50%;
         width: 200%;
         height: 200%;
-        background: linear-gradient(to bottom right, #00338D 50%, transparent 50%), linear-gradient(to top left, transparent 50%, #6D2077 50%); // Specified gradient colors for top-left and bottom-right
-        backgroundPosition: '0 0, 100% 100%',
-        backgroundSize: '50% 50%',
-        backgroundRepeat: 'no-repeat',
+        background: linear-gradient(45deg, #00338D, #6D2077 53%, #6D2077 66%, #00338D);
         z-index: -1;
         transition: transform 0.5s;
         transform: rotate(0deg);
