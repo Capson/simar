@@ -19,7 +19,8 @@ export const StarterPromptBubble = (props: Props) => (
           'font-size': '15px',
           'border-radius': '0.5em', // Combined both border-radius
           cursor: 'pointer',
-          border: '1px linear-gradient(to right, #00338D, #6D2077)', // Added border style
+          // border: '1px solid purple', // Added border style
+          border: 'solid;  border-image: linear-gradient(to right, #00338D, #6D2077) 1 / 5px',
           padding: '0.5em', // Added padding for space inside the border
           // background: 'linear-gradient(to right, #00338D, #6D2077)',
           // color: 'white',
