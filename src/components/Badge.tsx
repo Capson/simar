@@ -37,25 +37,26 @@ export const Badge = (props: Props) => {
   });
 
   return (
-    <span
-      class="w-full text-center px-[10px] pt-[6px] pb-[10px] m-auto text-[13px]"
-      style={{
-        color: props.poweredByTextColor ?? defaultTextColor,
-        'background-color': props.badgeBackgroundColor ?? '#ffffff',
-      }}
-    >
-      Created with ❤️ by
-      <a
-        ref={liteBadge}
-        href={'https://www.linkedin.com/in/simarpreet-singh-12a67480/'}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="lite-badge"
-        id="lite-badge"
-        style={{ 'font-weight': 'bold', 'text-align': 'center', color: props.poweredByTextColor ?? defaultTextColor }}
-      >
-        <span>Simarpreet Singh</span>
-      </a>
-    </span>
+    // <span
+    //   class="w-full text-center px-[10px] pt-[6px] pb-[10px] m-auto text-[13px]"
+    //   style={{
+    //     color: props.poweredByTextColor ?? defaultTextColor,
+    //     'background-color': props.badgeBackgroundColor ?? '#ffffff',
+    //   }}
+    // >
+    //   Created with ❤️ by
+    //   <a
+    //     ref={liteBadge}
+    //     href={'https://www.linkedin.com/in/simarpreet-singh-12a67480/'}
+    //     target="_blank"
+    //     rel="noopener noreferrer"
+    //     class="lite-badge"
+    //     id="lite-badge"
+    //     style={{ 'font-weight': 'bold', 'text-align': 'center', color: props.poweredByTextColor ?? defaultTextColor }}
+    //   >
+    //     <span>Simarpreet Singh</span>
+    //   </a>
+    // </span>
+    true
   );
 };
