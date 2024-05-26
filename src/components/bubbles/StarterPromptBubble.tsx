@@ -10,28 +10,45 @@ export const StarterPromptBubble = (props: Props) => (
     className="flex justify-start items-start animate-fade-in host-container hover:brightness-90 active:brightness-75"
     onClick={() => props.onPromptClick?.()}
     style={{
-      position: 'relative',
       display: 'inline-block',
+      position: 'relative',
+      background: 'white', // Background for inner content
       borderRadius: '12px', 
-      padding: '2px',
-      background: 'linear-gradient(to right, violet, red)',
+      padding: '8px', 
+      cursor: 'pointer',
     }}
   >
-    <div
-      className="px-2 py-1 whitespace-pre-wrap max-w-full"
+    <span
+      className="px-2 py-1 ml-1 whitespace-pre-wrap max-w-full chatbot-host-bubble"
       data-testid="host-bubble"
       style={{
-          display: 'inline-block',
-          width: 'max-content',
-          fontSize: '15px',
-          borderRadius: '12px', 
-          cursor: 'pointer',
-          backgroundColor: 'white', // Background for inner content
-          padding: '0.5em', // Inner padding for content
-          color: 'black', // Text color
+        display: 'inline-block',
+        fontSize: '15px',
+        backgroundImage: 'linear-gradient(to right, violet, red)',
+        WebkitBackgroundClip: 'text',
+        color: 'transparent',
+        padding: '6px 12px', // Adjust padding as needed
+        borderRadius: '12px',
+        border: '2px solid transparent',
+        backgroundClip: 'padding-box',
       }}
     >
       {props.prompt}
-    </div>
+    </span>
+    <div
+      style={{
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+        borderRadius: '12px',
+        border: '2px solid',
+        borderImageSlice: 1,
+        borderImageSource: 'linear-gradient(to right, violet, red)',
+        pointerEvents: 'none',
+      }}
+    />
   </div>
 );
