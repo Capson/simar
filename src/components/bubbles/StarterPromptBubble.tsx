@@ -21,7 +21,8 @@ export const StarterPromptBubble = (props: Props) => (
           cursor: 'pointer',
           border: '1px solid purple', // Added border style
           padding: '0.5em', // Added padding for space inside the border
-          background: 'violet',
+          background: 'linear-gradient(to right, #00338D, #6D2077)',
+          color: 'white',
         }}
       >
         {props.prompt}
