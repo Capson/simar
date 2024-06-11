@@ -453,3 +453,32 @@ textarea {
     transform: rotate(360deg);
   }
 }
+
+@keyframes chat-loader-bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.chat-loader-bounce {
+  animation: chat-loader-bounce 1.2s infinite ease-in-out;
+}
+
+.chat-loader-delay-0 {
+  animation-delay: 0s;
+}
+
+.chat-loader-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.chat-loader-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.chat-loader-delay-3 {
+  animation-delay: 0.3s;
+}
