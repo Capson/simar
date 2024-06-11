@@ -1,3 +1,3 @@
 import { JSX } from 'solid-js';
-export declare const KPMGLoadingAnimation: (props: JSX.SvgSVGAttributes<SVGSVGElement>) => JSX.Element;
+export declare const KPMGLoadingAnimation: () => JSX.Element;
 //# sourceMappingURL=KPMGLoadingAnimation.d.ts.map

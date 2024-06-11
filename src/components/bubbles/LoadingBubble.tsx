@@ -8,7 +8,6 @@
 //   </div>
 // );
 
-
 import { KPMGLoadingAnimation } from '@/components/bubbles/KPMGLoadingAnimation';
 
 export const LoadingBubble = () => (
@@ -18,3 +17,4 @@ export const LoadingBubble = () => (
     </span>
   </div>
 );
+
