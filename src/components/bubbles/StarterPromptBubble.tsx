@@ -8,16 +8,16 @@ export const StarterPromptBubble = (props: Props) => (
     <div
       data-modal-target="defaultModal"
       data-modal-toggle="defaultModal"
-      className="flex justify-start items-start animate-fade-in host-container active:brightness-75"
+      class="flex justify-start items-start animate-fade-in host-container active:brightness-75"
       onClick={() => props.onPromptClick?.()}
     >
       <span
-        className="px-2 py-1 ml-1 whitespace-pre-wrap max-w-full chatbot-host-bubble"
+        class="px-2 py-1 ml-1 whitespace-pre-wrap max-w-full chatbot-host-bubble"
         data-testid="host-bubble"
         style={{
           width: 'max-content',
-          fontSize: '15px',
-          borderRadius: '0.5em',
+          'font-size': '15px',
+          'border-radius': '0.5em',
           cursor: 'pointer',
           border: '2px solid #6D2077',
           padding: '0.5em',
