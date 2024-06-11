@@ -436,3 +436,20 @@ textarea {
   padding: 10px 10px;
   font-family: 'Poppins', sans-serif;
 }
+
+.kpmg-logo {
+  width: 100px;
+  height: 100px;
+  background-image: url('path/to/logo.png');
+  background-size: contain;
+  animation: logoAnimation 2s infinite;
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,3 +1,2 @@
-import { JSX } from 'solid-js';
-export declare const KPMGLoadingAnimation: () => JSX.Element;
+export declare const KPMGLoadingAnimation: () => import("solid-js").JSX.Element;
 //# sourceMappingURL=KPMGLoadingAnimation.d.ts.map
